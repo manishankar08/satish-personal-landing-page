@@ -28,11 +28,11 @@ const TechStackSection = () => {
       <div className="container mx-auto px-6 relative z-10">
         {/* Section header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-accent font-semibold text-sm uppercase tracking-wider">Technical Expertise</span>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mt-4 mb-6">
+          <span className="text-accent font-semibold text-sm uppercase tracking-wider font-sans">Technical Expertise</span>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl text-foreground mt-4 mb-6">
             Technology Stack
           </h2>
-          <p className="text-lg text-muted-foreground">
+          <p className="text-lg text-muted-foreground font-sans">
             A comprehensive toolkit for building scalable, maintainable web solutions.
           </p>
         </div>
@@ -42,7 +42,7 @@ const TechStackSection = () => {
           {technologies.map((tech, index) => (
             <span
               key={index}
-              className="tech-badge cursor-default"
+              className="tech-badge cursor-default font-sans"
             >
               {tech.name}
             </span>
@@ -62,7 +62,7 @@ const TechStackSection = () => {
               className="stat-card text-center"
             >
               <span className="text-3xl mb-2 block">{category.icon}</span>
-              <p className="font-semibold text-foreground">{category.label}</p>
+              <p className="font-semibold text-foreground font-sans">{category.label}</p>
             </div>
           ))}
         </div>
