@@ -29,11 +29,11 @@ const ValueBlocksSection = () => {
       <div className="container mx-auto px-6">
         {/* Section header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-accent font-semibold text-sm uppercase tracking-wider">What I Do</span>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mt-4 mb-6">
+          <span className="text-accent font-semibold text-sm uppercase tracking-wider font-sans">What I Do</span>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl text-foreground mt-4 mb-6">
             Comprehensive Technical Solutions
           </h2>
-          <p className="text-lg text-muted-foreground">
+          <p className="text-lg text-muted-foreground font-sans">
             Specialising in complex WordPress builds, high-converting eCommerce stores, and sophisticated API integrations.
           </p>
         </div>
@@ -50,10 +50,10 @@ const ValueBlocksSection = () => {
                   <feature.icon className="w-7 h-7 text-accent" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-foreground mb-2 group-hover:text-accent transition-colors">
+                  <h3 className="text-xl text-foreground mb-2 group-hover:text-accent transition-colors">
                     {feature.title}
                   </h3>
-                  <p className="text-muted-foreground leading-relaxed">
+                  <p className="text-muted-foreground leading-relaxed font-sans">
                     {feature.description}
                   </p>
                 </div>

@@ -25,8 +25,8 @@ const TestimonialsSection = () => {
       <div className="container mx-auto px-6">
         {/* Section header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-accent font-semibold text-sm uppercase tracking-wider">Credibility Signals</span>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mt-4 mb-6">
+          <span className="text-accent font-semibold text-sm uppercase tracking-wider font-sans">Credibility Signals</span>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl text-foreground mt-4 mb-6">
             What Clients Say
           </h2>
         </div>
@@ -47,19 +47,19 @@ const TestimonialsSection = () => {
                 ))}
               </div>
 
-              <blockquote className="text-lg text-foreground mb-6 leading-relaxed">
+              <blockquote className="text-lg text-foreground mb-6 leading-relaxed font-sans">
                 "{testimonial.quote}"
               </blockquote>
 
               <div className="flex items-center gap-3">
                 <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center">
-                  <span className="text-accent font-bold text-lg">
+                  <span className="text-accent font-bold text-lg font-sans">
                     {testimonial.author.charAt(0)}
                   </span>
                 </div>
                 <div>
-                  <p className="font-semibold text-foreground">{testimonial.author}</p>
-                  <p className="text-sm text-muted-foreground">{testimonial.role}</p>
+                  <p className="font-semibold text-foreground font-sans">{testimonial.author}</p>
+                  <p className="text-sm text-muted-foreground font-sans">{testimonial.role}</p>
                 </div>
               </div>
             </div>
@@ -71,10 +71,10 @@ const TestimonialsSection = () => {
           <div className="grid grid-cols-3 gap-8">
             {stats.map((stat, index) => (
               <div key={index} className="text-center">
-                <p className="text-3xl md:text-4xl lg:text-5xl font-bold text-accent mb-2">
+                <p className="text-3xl md:text-4xl lg:text-5xl text-accent mb-2" style={{ fontFamily: "'DM Serif Display', serif" }}>
                   {stat.value}
                 </p>
-                <p className="text-muted-foreground text-sm md:text-base">
+                <p className="text-muted-foreground text-sm md:text-base font-sans">
                   {stat.label}
                 </p>
               </div>
