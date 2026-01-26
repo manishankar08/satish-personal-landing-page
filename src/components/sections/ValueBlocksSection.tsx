@@ -1,134 +1,91 @@
-import { useState } from "react";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Code2, Workflow, ShoppingCart, Puzzle, Zap } from "lucide-react";
-
-const tabsData = [
+const timelineData = [
   {
-    id: "web-development",
-    label: "Web Development",
-    icon: Code2,
-    title: "Custom websites that just work.",
-    description: "WordPress, Shopify, Magento, and Laravel development tailored to your brand. Pixel-perfect execution with clean, maintainable code that scales with your business.",
-    features: [
-      "PSD/Figma to WordPress conversion",
-      "Custom theme & plugin development",
-      "Performance optimization",
-      "Mobile-first responsive design",
-    ],
+    period: "Week 1",
+    title: "Quick Wins",
+    description: "Launch your first custom workflow and lock a clean data backbone—live on the floor, no rip-and-replace.",
+    barHeights: [40, 55, 45, 60, 50, 65, 55, 70, 60, 75],
   },
   {
-    id: "ecommerce",
-    label: "eCommerce Solutions",
-    icon: ShoppingCart,
-    title: "Stores that convert visitors to customers.",
-    description: "High-converting online stores with seamless checkout experiences, inventory management, and payment integrations that boost your bottom line.",
-    features: [
-      "WooCommerce & Shopify setup",
-      "Payment gateway integration",
-      "Inventory management systems",
-      "Abandoned cart recovery",
-    ],
+    period: "Month 1",
+    title: "Building Momentum",
+    description: "Add three high-leverage workflows and connect what's already in place; spreadsheets fade, one source of truth emerges.",
+    barHeights: [45, 60, 50, 65, 55, 70, 60, 75, 65, 80],
   },
   {
-    id: "automation",
-    label: "Automation & APIs",
-    icon: Workflow,
-    title: "Connect everything, automate the rest.",
-    description: "Seamlessly connect tools with Zapier, custom scripts, and marketing API integrations. Spend less time on repetitive tasks and more on what matters.",
-    features: [
-      "Zapier workflow automation",
-      "Google Ads & Facebook API",
-      "CRM integrations",
-      "Custom webhook handlers",
-    ],
+    period: "Quarter 1",
+    title: "Full Integration",
+    description: "Run dynamic, shift-level planning in minutes—constraints respected, change windows honored, audit trail by default.",
+    barHeights: [50, 65, 55, 70, 60, 75, 65, 80, 70, 85],
   },
   {
-    id: "integrations",
-    label: "Custom Integrations",
-    icon: Puzzle,
-    title: "APIs that speak your language.",
-    description: "RESTful APIs, payment gateways (Stripe, PayPal), and third-party service connections that work reliably and scale effortlessly.",
-    features: [
-      "RESTful API development",
-      "Stripe & PayPal integration",
-      "Third-party service connections",
-      "Webhook & callback handling",
-    ],
-  },
-  {
-    id: "support",
-    label: "Support & Maintenance",
-    icon: Zap,
-    title: "Keep your systems running smoothly.",
-    description: "Ongoing support, security updates, and performance monitoring to ensure your web presence stays fast, secure, and always available.",
-    features: [
-      "24/7 monitoring",
-      "Security updates & patches",
-      "Performance optimization",
-      "Regular backups",
-    ],
+    period: "Year 1",
+    title: "Complete Transformation",
+    description: "You're not drafting an AI plan—you're operating one on a foundation built in weeks, phasing out legacy pieces on your timeline.",
+    barHeights: [55, 70, 60, 75, 65, 80, 70, 85, 75, 90],
   },
 ];
 
 const ValueBlocksSection = () => {
-  const [activeTab, setActiveTab] = useState(tabsData[0].id);
-  const activeData = tabsData.find((tab) => tab.id === activeTab)!;
-
   return (
     <section className="py-24 bg-background relative">
       <div className="container mx-auto px-6">
+        {/* Section badge */}
+        <div className="text-center mb-6">
+          <span className="inline-flex items-center px-4 py-2 rounded-full bg-accent/10 text-accent text-sm font-medium">
+            Roadmap
+          </span>
+        </div>
+
         {/* Section header */}
-        <div className="text-center max-w-3xl mx-auto mb-12">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl text-foreground">
-            One truth everyone actually trusts:
+        <div className="text-center max-w-3xl mx-auto mb-6">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl text-foreground font-display">
+            Your Roadmap to Full Capability, Accelerated
           </h2>
         </div>
 
-        {/* Tabs */}
-        <Tabs value={activeTab} onValueChange={setActiveTab} className="max-w-5xl mx-auto">
-          <TabsList className="w-full flex flex-wrap justify-center gap-2 bg-transparent h-auto p-0 mb-8">
-            {tabsData.map((tab) => (
-              <TabsTrigger
-                key={tab.id}
-                value={tab.id}
-                className="px-4 py-3 text-sm font-medium text-muted-foreground data-[state=active]:text-foreground data-[state=active]:border-b-2 data-[state=active]:border-accent rounded-none bg-transparent data-[state=active]:bg-transparent data-[state=active]:shadow-none transition-all whitespace-nowrap"
+        {/* Subtitle with left border */}
+        <div className="max-w-3xl mx-auto mb-16">
+          <div className="border-l-2 border-border pl-6 py-2">
+            <p className="text-muted-foreground leading-relaxed text-center md:text-left">
+              The tools that kept plants predictable for 40 years were built for static workflows — and they're slowing your ability to react to today's pace of change. The next decade belongs to operations that learn every day and adapt in hours.
+            </p>
+          </div>
+        </div>
+
+        {/* Timeline cards */}
+        <div className="bg-secondary rounded-3xl p-6 lg:p-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {timelineData.map((item, index) => (
+              <div
+                key={item.period}
+                className="bg-card rounded-2xl p-6 hover-lift relative"
               >
-                {tab.label.toUpperCase()}
-              </TabsTrigger>
-            ))}
-          </TabsList>
-
-          {tabsData.map((tab) => (
-            <TabsContent key={tab.id} value={tab.id} className="mt-0">
-              <div className="bg-secondary rounded-3xl p-8 lg:p-12">
-                <div className="grid lg:grid-cols-2 gap-8 items-center">
-                  {/* Content */}
-                  <div>
-                    <h3 className="text-2xl md:text-3xl text-foreground mb-4">
-                      {tab.title}
-                    </h3>
-                    <p className="text-muted-foreground leading-relaxed font-sans mb-6">
-                      {tab.description}
-                    </p>
-                    <ul className="space-y-3">
-                      {tab.features.map((feature, index) => (
-                        <li key={index} className="flex items-center gap-3 text-foreground font-sans">
-                          <span className="w-1.5 h-1.5 rounded-full bg-accent flex-shrink-0" />
-                          {feature}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-
-                  {/* Visual placeholder */}
-                  <div className="bg-card rounded-2xl p-8 min-h-[280px] flex items-center justify-center">
-                    <tab.icon className="w-24 h-24 text-muted-foreground/30" />
-                  </div>
+                {/* Bar chart visualization */}
+                <div className="flex items-end justify-between gap-1 h-32 mb-6">
+                  {item.barHeights.map((height, barIndex) => (
+                    <div
+                      key={barIndex}
+                      className="flex-1 bg-muted rounded-t-sm transition-all duration-300"
+                      style={{ height: `${height}%` }}
+                    />
+                  ))}
+                  {/* Orange dot indicator */}
+                  <div className="absolute top-6 right-6 w-2.5 h-2.5 rounded-full bg-accent" />
                 </div>
+
+                {/* Period label */}
+                <h3 className="text-xl font-display text-foreground mb-2">
+                  {item.period}
+                </h3>
+
+                {/* Description */}
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  {item.description}
+                </p>
               </div>
-            </TabsContent>
-          ))}
-        </Tabs>
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   );
