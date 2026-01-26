@@ -26,14 +26,14 @@ const CTASection = () => {
               Get a Consultation
               <ArrowRight className="w-5 h-5" />
             </Button>
-            <Button variant="outline" size="lg" className="border-background/30 text-background hover:bg-background/10">
+            <Button variant="outline" size="lg" className="border-background/30 text-background hover:bg-background/10 hover:text-background">
               <Calendar className="w-5 h-5" />
               Schedule a Call
             </Button>
           </div>
 
-          {/* Contact info */}
-          <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-background/10 border border-background/20">
+          {/* Contact info - no border, just background */}
+          <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-background/10">
             <Mail className="w-5 h-5 text-accent" />
             <span className="text-background/80 font-sans">
               Available for new projects • Quick response guaranteed

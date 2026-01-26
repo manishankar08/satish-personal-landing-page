@@ -10,10 +10,7 @@ const qualities = [
 
 const StandardSection = () => {
   return (
-    <section className="py-24 bg-secondary/50 relative overflow-hidden">
-      {/* Background decoration */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-accent/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
-      
+    <section className="py-24 bg-background relative overflow-hidden">
       <div className="container mx-auto px-6 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center max-w-6xl mx-auto">
           {/* Content */}
@@ -43,9 +40,9 @@ const StandardSection = () => {
             </Button>
           </div>
 
-          {/* Visual card */}
+          {/* Visual card - no border, just background */}
           <div className="relative">
-            <div className="glass-card rounded-3xl p-8 lg:p-10">
+            <div className="bg-secondary rounded-3xl p-8 lg:p-10">
               {/* Code snippet visual */}
               <div className="bg-foreground rounded-2xl p-6 font-mono text-sm">
                 <div className="flex items-center gap-2 mb-4">
@@ -74,11 +71,11 @@ class ProjectManager {
 
               {/* Stats below code */}
               <div className="grid grid-cols-2 gap-4 mt-6">
-                <div className="bg-secondary rounded-xl p-4 text-center">
+                <div className="bg-card rounded-xl p-4 text-center">
                   <p className="text-2xl font-bold text-foreground font-sans">2,688+</p>
                   <p className="text-sm text-muted-foreground font-sans">Hours Logged</p>
                 </div>
-                <div className="bg-secondary rounded-xl p-4 text-center">
+                <div className="bg-card rounded-xl p-4 text-center">
                   <p className="text-2xl font-bold text-accent font-sans">Top Rated</p>
                   <p className="text-sm text-muted-foreground font-sans">Upwork Status</p>
                 </div>
