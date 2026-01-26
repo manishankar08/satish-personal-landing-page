@@ -31,12 +31,12 @@ const TestimonialsSection = () => {
           </h2>
         </div>
 
-        {/* Testimonial cards */}
+        {/* Testimonial cards - no border, just background */}
         <div className="grid md:grid-cols-2 gap-6 lg:gap-8 max-w-4xl mx-auto mb-16">
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="glass-card rounded-3xl p-8 relative hover-lift"
+              className="bg-secondary rounded-3xl p-8 relative hover-lift"
             >
               <Quote className="w-10 h-10 text-accent/20 absolute top-6 right-6" />
               
@@ -66,8 +66,8 @@ const TestimonialsSection = () => {
           ))}
         </div>
 
-        {/* Stats bar */}
-        <div className="glass-card rounded-3xl p-8 max-w-4xl mx-auto">
+        {/* Stats bar - no border, just background */}
+        <div className="bg-secondary rounded-3xl p-8 max-w-4xl mx-auto">
           <div className="grid grid-cols-3 gap-8">
             {stats.map((stat, index) => (
               <div key={index} className="text-center">

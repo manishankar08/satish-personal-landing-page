@@ -133,7 +133,7 @@
   }
 
   .glass-card {
-    @apply bg-card/90 backdrop-blur-xl border border-border;
+    @apply bg-card/90 backdrop-blur-xl;
     box-shadow: var(--shadow-soft);
   }
 
@@ -142,7 +142,7 @@
   }
 
   .stat-card {
-    @apply bg-card rounded-2xl p-6 border border-border transition-all duration-300;
+    @apply bg-secondary rounded-2xl p-6 transition-all duration-300;
     box-shadow: var(--shadow-soft);
   }
 
@@ -152,7 +152,7 @@
   }
 
   .tech-badge {
-    @apply inline-flex items-center px-4 py-2 rounded-full text-sm font-medium bg-secondary text-secondary-foreground border border-border transition-all duration-300;
+    @apply inline-flex items-center px-4 py-2 rounded-full text-sm font-medium bg-secondary text-secondary-foreground transition-all duration-300;
   }
 
   .tech-badge:hover {

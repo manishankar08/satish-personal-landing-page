@@ -12,8 +12,8 @@ const Header = () => {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <a href="#" className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-xl bg-foreground flex items-center justify-center">
-              <span className="text-background font-bold text-lg">S</span>
+            <div className="w-10 h-10 rounded-full bg-accent flex items-center justify-center">
+              <span className="text-accent-foreground font-bold text-lg">S</span>
             </div>
             <span className="text-foreground font-bold text-xl hidden sm:block" style={{ fontFamily: "'DM Serif Display', serif" }}>Satish</span>
           </a>

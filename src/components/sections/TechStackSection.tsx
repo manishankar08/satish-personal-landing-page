@@ -21,10 +21,7 @@ const technologies = [
 
 const TechStackSection = () => {
   return (
-    <section className="py-24 bg-secondary/50 relative overflow-hidden">
-      {/* Background decoration */}
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-accent/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2" />
-      
+    <section className="py-24 bg-background relative overflow-hidden">
       <div className="container mx-auto px-6 relative z-10">
         {/* Section header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
@@ -42,14 +39,14 @@ const TechStackSection = () => {
           {technologies.map((tech, index) => (
             <span
               key={index}
-              className="tech-badge cursor-default font-sans"
+              className="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium bg-secondary text-secondary-foreground transition-all duration-300 hover:bg-accent hover:text-accent-foreground cursor-default font-sans"
             >
               {tech.name}
             </span>
           ))}
         </div>
 
-        {/* Category highlights */}
+        {/* Category highlights - no border, just background */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-16 max-w-4xl mx-auto">
           {[
             { label: "Backend", icon: "⚙️" },
@@ -59,7 +56,7 @@ const TechStackSection = () => {
           ].map((category, index) => (
             <div
               key={index}
-              className="stat-card text-center"
+              className="bg-secondary rounded-2xl p-6 text-center transition-all duration-300 hover:-translate-y-1"
             >
               <span className="text-3xl mb-2 block">{category.icon}</span>
               <p className="font-semibold text-foreground font-sans">{category.label}</p>
