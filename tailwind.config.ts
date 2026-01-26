@@ -14,7 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
+        sans: ['Geist', 'system-ui', 'sans-serif'],
+        display: ['Bricolage Grotesque', 'sans-serif'],
         mono: ['JetBrains Mono', 'monospace'],
       },
       colors: {
