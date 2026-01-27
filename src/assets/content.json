@@ -1,0 +1,262 @@
+{
+    "header": {
+        "logo": "Satish M.",
+        "navLinks": [
+            {
+                "label": "Services",
+                "href": "#services"
+            },
+            {
+                "label": "About",
+                "href": "#about"
+            },
+            {
+                "label": "Testimonials",
+                "href": "#testimonials"
+            },
+            {
+                "label": "Tech Stack",
+                "href": "#tech"
+            }
+        ],
+        "cta": "Get in Touch",
+        "ctaUrl": "https://www.upwork.com/freelancers/~0174edb02bd7c23d66/"
+    },
+    "hero": {
+        "badge": "Meet Satish",
+        "headline": "Your Full-Stack Developer,",
+        "headlineItalic": "Delivered On Time.",
+        "description": "Not another unreliable freelancer. I work alongside your existing team, fixing your biggest pain first—whether that's WordPress chaos, eCommerce issues, or API black holes. Start small, prove value, expand when ready.",
+        "highlights": [
+            "Your project stays on track. Your deadlines get met.",
+            "I deliver it all. Or refine it. Your choice."
+        ],
+        "primaryCta": "Discuss Your Project",
+        "primaryCtaUrl": "https://www.upwork.com/freelancers/~0174edb02bd7c23d66/",
+        "secondaryCta": "View My Work",
+        "secondaryCtaUrl": "#case-studies"
+    },
+    "valueBlocks": {
+        "badge": "Solutions",
+        "title": "Comprehensive Technical Solutions",
+        "subtitle": "Specialising in complex WordPress builds, high-converting eCommerce stores, and sophisticated API integrations.",
+        "features": [
+            {
+                "title": "Custom Web & eCommerce",
+                "description": "WordPress, Shopify, Magento, and Laravel development tailored to your brand."
+            },
+            {
+                "title": "Automation & APIs",
+                "description": "Seamlessly connect tools with Zapier, custom scripts, and marketing API integrations (Google Ads/Facebook)."
+            }
+        ]
+    },
+    "standard": {
+        "badge": "The Satish Standard",
+        "title": "Clean Code.",
+        "titleItalic": "Manageable Results.",
+        "description": "I don't just write code; I build systems that are easy to understand and update as your business grows. Whether it's PSD-to-WordPress or custom plugin development, my focus is always on quality and meeting your deadlines.",
+        "qualities": [
+            "Clean, well-documented code",
+            "Scalable architecture patterns",
+            "Ongoing support & maintenance"
+        ],
+        "cta": "View My Work History",
+        "ctaUrl": "#case-studies",
+        "stats": [
+            {
+                "value": "2,688+",
+                "label": "Hours Logged"
+            },
+            {
+                "value": "Top Rated",
+                "label": "Upwork Status"
+            }
+        ],
+        "verifiedExpert": "✓ Verified Expert"
+    },
+    "techStack": {
+        "badge": "Technical Expertise",
+        "title": "Technology Stack",
+        "description": "A comprehensive toolkit for building scalable, maintainable web solutions.",
+        "technologies": [
+            {
+                "name": "PHP",
+                "category": "Backend"
+            },
+            {
+                "name": "Laravel",
+                "category": "Backend"
+            },
+            {
+                "name": "CodeIgniter",
+                "category": "Backend"
+            },
+            {
+                "name": "WordPress",
+                "category": "CMS"
+            },
+            {
+                "name": "Shopify",
+                "category": "eCommerce"
+            },
+            {
+                "name": "Magento",
+                "category": "eCommerce"
+            },
+            {
+                "name": "JavaScript",
+                "category": "Frontend"
+            },
+            {
+                "name": "MySQL",
+                "category": "Database"
+            },
+            {
+                "name": "RESTful APIs",
+                "category": "Integration"
+            },
+            {
+                "name": "Stripe",
+                "category": "Payments"
+            },
+            {
+                "name": "PayPal",
+                "category": "Payments"
+            },
+            {
+                "name": "Zapier",
+                "category": "Automation"
+            },
+            {
+                "name": "Google Ads API",
+                "category": "Marketing"
+            },
+            {
+                "name": "Facebook API",
+                "category": "Marketing"
+            },
+            {
+                "name": "WooCommerce",
+                "category": "eCommerce"
+            },
+            {
+                "name": "Theme Development",
+                "category": "WordPress"
+            },
+            {
+                "name": "Plugin Development",
+                "category": "WordPress"
+            },
+            {
+                "name": "PSD to WordPress",
+                "category": "Design"
+            }
+        ],
+        "categories": [
+            {
+                "label": "Backend",
+                "icon": "⚙️"
+            },
+            {
+                "label": "Frontend",
+                "icon": "🎨"
+            },
+            {
+                "label": "eCommerce",
+                "icon": "🛒"
+            },
+            {
+                "label": "Automation",
+                "icon": "🔄"
+            }
+        ]
+    },
+    "testimonials": {
+        "badge": "Credibility Signals",
+        "title": "Feedback from Our Esteemed Clients on Our Services and Solutions",
+        "description": "We highlight the experiences and testimonials of our valued clients, showcasing their insights on our services. Their feedback provides a deeper understanding of how our solutions have met their needs, addressed challenges, and contributed to their success.",
+        "items": [
+            {
+                "quote": "He is a great web developer... able to complete tasks in a timely fashion. Reliable.",
+                "author": "Verified Client",
+                "role": "Upwork Project"
+            },
+            {
+                "quote": "Great to work with, very personable and does what he says he will do. Willing to work with tight timelines.",
+                "author": "Verified Client",
+                "role": "Upwork Project"
+            },
+            {
+                "quote": "He is a great web developer... able to complete tasks in a timely fashion. Reliable.",
+                "author": "Verified Client",
+                "role": "Upwork Project"
+            },
+            {
+                "quote": "Great to work with, very personable and does what he says he will do. Willing to work with tight timelines.",
+                "author": "Verified Client",
+                "role": "Upwork Project"
+            }
+        ],
+        "stats": [
+            {
+                "value": "80+",
+                "label": "Successful Projects"
+            },
+            {
+                "value": "2,688+",
+                "label": "Total Hours"
+            },
+            {
+                "value": "100%",
+                "label": "Client Satisfaction"
+            }
+        ]
+    },
+    "caseStudies": [
+        {
+            "category": "E-Commerce Platform Rebuild",
+            "title": "High quality, scalable, and blazing-fast e-commerce experiences",
+            "description": "Complete WooCommerce migration with custom payment integrations, resulting in 47% conversion increase and 3x performance.",
+            "link": "https://www.medium.com/"
+        },
+        {
+            "category": "SaaS Analytics Dashboard",
+            "title": "10K+ daily users served with real-time insights and analytics",
+            "description": "Built a real-time analytics platform with React and Node.js, achieving 99.9% uptime for data-driven decisions.",
+            "link": "https://www.medium.com/"
+        }
+    ],
+    "cta": {
+        "title": "Ready to build something",
+        "titleItalic": "exceptional?",
+        "description": "Let's discuss how 10+ years of full-stack expertise can solve your technical challenges.",
+        "primaryCta": "Get a Consultation",
+        "primaryCtaUrl": "https://www.upwork.com/freelancers/~0174edb02bd7c23d66/",
+        "secondaryCta": "Schedule a Call",
+        "secondaryCtaUrl": "https://www.upwork.com/freelancers/~0174edb02bd7c23d66/",
+        "availability": "Available for new projects • Quick response guaranteed"
+    },
+    "footer": {
+        "logo": "Satish M.",
+        "role": "Full-Stack Developer",
+        "social": [
+            {
+                "platform": "Github",
+                "href": "#"
+            },
+            {
+                "platform": "Linkedin",
+                "href": "#"
+            },
+            {
+                "platform": "Twitter",
+                "href": "#"
+            },
+            {
+                "platform": "Mail",
+                "href": "#"
+            }
+        ]
+    }
+}
