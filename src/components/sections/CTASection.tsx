@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Mail, Calendar } from "lucide-react";
+import { ArrowUpRight, Mail, Calendar } from "lucide-react";
 
 import content from "@/assets/content.json";
 
@@ -29,7 +29,7 @@ const CTASection = () => {
             <Button asChild variant="secondary" size="lg">
               <a href={cta.primaryCtaUrl} target="_blank" rel="noopener noreferrer">
                 {cta.primaryCta}
-                <ArrowRight className="w-5 h-5" />
+                <ArrowUpRight className="w-5 h-5" />
               </a>
             </Button>
             <Button asChild variant="outline" size="lg" className="border-background/30 text-background bg-background/0 hover:bg-background/10 hover:text-background">

@@ -78,10 +78,9 @@ class ProjectManager {
               ))}
             </ul>
 
-            <Button asChild variant="default" size="lg" className="bg-foreground text-background hover:bg-foreground/90 hover:text-background">
+            <Button asChild variant="outline" size="lg" className="border-foreground/30 text-foreground bg-background hover:bg-foreground/10 hover:text-foreground">
               <a href={standard.ctaUrl}>
                 {standard.cta}
-                <ArrowRight className="w-5 h-5" />
               </a>
             </Button>
           </div>

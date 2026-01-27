@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import satishCandid from "@/assets/satish-profile.png";
 
 import content from "@/assets/content.json";
@@ -48,7 +48,7 @@ const HeroSection = () => {
               <Button asChild variant="default" size="lg" className="bg-foreground text-background hover:bg-foreground/90 hover:text-background">
                 <a href={hero.primaryCtaUrl} target="_blank" rel="noopener noreferrer">
                   {hero.primaryCta}
-                  <ArrowRight className="w-5 h-5" />
+                  <ArrowUpRight className="w-5 h-5" />
                 </a>
               </Button>
               <Button asChild variant="outline" size="lg" className="border-foreground/30 text-foreground bg-background/0 hover:bg-foreground/10 hover:text-foreground  ">

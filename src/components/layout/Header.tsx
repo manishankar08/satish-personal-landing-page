@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import ThemeToggle from "@/components/ThemeToggle";
+import { ArrowUpRight } from "lucide-react";
 
 import content from "@/assets/content.json";
 
@@ -35,7 +36,10 @@ const Header = () => {
           <div className="hidden md:flex items-center gap-4">
             <ThemeToggle />
             <Button asChild variant="outline" size="sm" className="border-foreground text-background bg-foreground hover:bg-background hover:text-foreground">
-              <a href={header.ctaUrl}>{header.cta}</a>
+              <a href={header.ctaUrl} target="_blank">
+                {header.cta}
+                <ArrowUpRight className="h-4 w-4" />
+              </a>
             </Button>
           </div>
 
